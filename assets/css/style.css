@@ -39,6 +39,7 @@ header {
     transition: color 0.3s ease;
     display: block;
     padding: 10px 20px;
+    text-decoration: none;
 }
 
 .nav-links a:hover {
