@@ -67,34 +67,6 @@ header {
     transition: transform 0.3s ease;
 }
 
-/* responsive design */
-@media (max-width: 768px) {
-    .navbar {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        right: 20px;
-        background-color: #fff;
-        box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .nav-links a {
-        padding: 10px 20px;
-        text-align: center;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-}
-
 
 /* footer general styles */
 footer {
@@ -102,26 +74,31 @@ footer {
     padding: 40px 20px;
     font-family: 'Roboto' sans-seerif;
     color: #3b2c2c;
+    margin-top: 30px;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 30px;
 }
 
 .footer-section {
+    display: flex;
     flex: 1;
-    min-width: 200px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 33%;
 }
 
 .footer-section h3{
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-top: 65px
 }
 
 .footer-section p, .footer-section li, .footer-section a {
@@ -141,8 +118,8 @@ footer {
 
 /* social icons */
 .social-icons a i{
-    width: 20px;
-    margin-right: 10px;
+    width: 30px;
+    margin-right: 20px;
     transition: transform 0.3s ease;
 }
 
@@ -166,4 +143,32 @@ footer {
 .footer-bottom p {
     font-size: 12px;
     color: #7c4c39;
+}
+
+/* responsive design */
+@media (max-width: 768px) {
+    .navbar .footer-container, {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #fff;
+        box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links a .footer-section {
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
 }
