@@ -111,7 +111,23 @@ header {
 }
 
 /* hero section */
+.hero {
+    padding: 50px 20px;
+    text-align: center;
+}
 
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero-column {
+    flex: 1;
+}
 
 
 /* footer general styles */
