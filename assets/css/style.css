@@ -129,12 +129,32 @@ header {
     flex: 1;
 }
 
+.hero-column p {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.divider {
+    width: 2px;
+    background-color: #f0dfce;
+    height: 80px;
+    margin: 0 auto;
+}
+
+/* image section */
+.hero-image img {
+    width: 300px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    display: block;
+}
 
 /* footer general styles */
 footer {
     background-color: #f7e6d5;
     padding: 40px 20px;
-    font-family: 'Roboto' sans-seerif;
+    font-family: 'Roboto' sans-serif;
     color: #3b2c2c;
     margin-top: 30px;
 }
