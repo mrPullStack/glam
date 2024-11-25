@@ -67,6 +67,52 @@ header {
     transition: transform 0.3s ease;
 }
 
+/* top section */
+.top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
+    padding-top: 90px
+}
+
+.top-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.top-text h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d94343;
+}
+
+.top-image {
+    width: 300px;
+    border-radius: 15px;
+}
+
+/* hero section */
+
+
 
 /* footer general styles */
 footer {
@@ -98,7 +144,6 @@ footer {
 .footer-section h3{
     font-size: 18px;
     font-weight: bold;
-    margin-top: 65px
 }
 
 .footer-section p, .footer-section li, .footer-section a {
